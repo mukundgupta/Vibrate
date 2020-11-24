@@ -9,7 +9,7 @@ function setup() {
    vibrate(1000)
  })
   
-  button2 = createButton('Vibrate Once')
+  button2 = createButton('Vibrate In Pattern')
  button2.position(400,300)
  button2.style('width','200')
  button2.style('height','42')
