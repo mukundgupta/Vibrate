@@ -8,7 +8,18 @@ function setup() {
  button.mousePressed(()=>{
    vibrate(1000)
  })
+  
+  button2 = createButton('Vibrate Once')
+ button2.position(400,300)
+ button2.style('width','200')
+ button2.style('height','42')
+ button2.style('background','red')
+   button2.mousePressed(()=>{
+ vibratePattern();
+ })
 }
+
+
 
 function draw() {
   background(255,255,255);  
@@ -17,4 +28,8 @@ function draw() {
 
 function vibrate(ms){
   navigator.vibrate(ms)
+}
+
+function vibratePattern(){
+  navigator.vibrate([300,200,400,100,1000])
 }
